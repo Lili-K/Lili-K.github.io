@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    width: 100%;   
+    height: 60px;
+}
+
+header nav{
+    display:flex;
+    justify-content: flex-end;
+    
+    
+    
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+ 
+a{
+    text-decoration: none;
+    cursor:pointer
+}
+
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: blueviolet;
+}
+
+
+/*ICONO DE MENU*/
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+}
+
+/*imagen estilo*/
+/*acceder a elemento nav que contiene varios subelemenos*/
+nav .nav-right-section img{
+    /*para hacer circular*/
+    border-radius: 60px;
+    /*para separar imagen de incono de cuadritos, se hace a traves de margenes*/
+    margin-left: 35px;
+    width: 35px;
+    height: 35px;
+
+
+}
+
+main {
+    margin-top: 150px;
+    /*para centrar elementos*/
+    text-align: center;
+
+
+}
+/*sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+/*logo*/
+main .main-logo img{
+    height: 120px;
+}
+
+/*sección input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+main .main-input input{
+    border: none;
+    width: 550px;
+    height: 40px;
+    outline: none;
+    
+
+}
+
+/*para cambiar de color cada vez que seleccione una area*/
+main .main-input-container:hover{
+    border-color: aqua;
+    box-shadow: 0 1px 6px 1px #20212447;
+
+}
+
+main .main-input .search-icon{
+
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+
+
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    padding-left: 1%;
+
+
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 7%;
+
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+
+}
+
+main .main-buttons button{
+    border:0;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+
+/*footer*/
+
+footer{
+    background-color:#f2f2f2;;
+    width:100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    /*ancho del borde*/
+    border-top: 1px solid #e4e4e4;
+
+    /*hacer ver elementos como una tabla, se usa la propiedad display, es decir, dividir contenido footeer en dos columnas*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /*para centrar*/
+    align-items: center;
+    /*como mandar contenido al final del elemento padre, posiciona el footer al final*/
+    bottom: 0%;
+}
+    
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+/*edicion de cada clase*/
+
+footer .footer-left{
+    /*mover elementos a la derecha*/
+    justify-self: left;
+
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+/*para editar todos los elementos de las listas*/
+footer ul li a{
+
+    color: #70757a;
+    margin:10px;
+
+
+
+}
+
+
+
+
